@@ -1,0 +1,48 @@
+MVC :- model view controller 
+
+its very important module use in various framework .Some popular framework which use mvc are django,laravel,ci,.....
+
+
+model :- structure -> database
+view :- frontend
+controller :- main logic or act as a intermediate between model an view
+
+*NOTE :- Model and view cannot communicate directly
+
+
+Process fast
+Decrease code complexity
+Security increases
+
+when view is called it goes to -->
+|-----------|
+| 			|--->routing ---> security --> application controller <---> Process
+|index.php 	|								|
+|		 	|<----- caching  <-- view  <----| 
+|-----------|
+
+Composer :-
+downloads all packages dependency libraries automatically
+
+Laravell also control version
+
+
+Laravel installation :-
+
+
+sudo composer global require "laravel/installer"
+
+sudo nano .bashrc
+
+add at the end :- 
+
+export PATH="$PATH:$HOME/.config/composer/vendor/bin"
+
+source ~/.bashrc
+
+command to make a proj :- laravel new projectName
+command to run a server php program :- php artisan serve  Or  php artisan serve --port 8003
+command to down the sever  :- php artisan down
+
+command to create controller can create using gui:- php artisan make:Controller filename
+command to create model can create using gui :-php artisan make:Model filename
